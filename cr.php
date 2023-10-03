@@ -10,6 +10,9 @@ $multi = @$_REQUEST['multi'];
 $path = @$_REQUEST['path'];
 $type = @$_REQUEST['type'];
 
+//关闭PHP本身报错输出
+error_reporting(0); 
+
 $head = 'https://';
 $api_path = '/api/v3/share/download/'; //网盘下载api路径
 
